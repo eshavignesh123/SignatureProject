@@ -1,8 +1,10 @@
 import streamlit as st
 
 import cv2 
+
+file_name = st.file_uploader("Upload file", type=["csv", "png", "jpg"])
   
-file_name = "signature.jpg"
+
 
 src = cv2.imread(file_name, 1) 
 
